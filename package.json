@@ -1,0 +1,33 @@
+{
+  "name": "notepick",
+  "version": "1.0.0",
+  "description": "NotePick - 网页笔记浏览器扩展",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "typecheck": "vue-tsc --noEmit"
+  },
+  "dependencies": {
+    "vue": "^3.4.21",
+    "pinia": "^2.1.7",
+    "dexie": "^4.0.4",
+    "@mozilla/readability": "^0.5.0",
+    "uuid": "^9.0.1",
+    "@iconify/vue": "^4.1.1"
+  },
+  "devDependencies": {
+    "@crxjs/vite-plugin": "^2.0.0-beta.25",
+    "@types/chrome": "^0.0.263",
+    "@types/node": "^20.11.30",
+    "@types/uuid": "^9.0.8",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "typescript": "^5.4.3",
+    "vite": "^5.2.6",
+    "vue-tsc": "^2.0.6",
+    "tailwindcss": "^3.4.3",
+    "postcss": "^8.4.38",
+    "autoprefixer": "^10.4.19"
+  }
+}

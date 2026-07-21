@@ -1,0 +1,136 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===== Global base styles ===== */
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue',
+    Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+}
+
+/* ===== Custom scrollbar ===== */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* ===== Search highlight ===== */
+mark {
+  background-color: #fef08a;
+  color: inherit;
+  padding: 0 2px;
+  border-radius: 2px;
+}
+
+/* ===== Toast animation ===== */
+@keyframes notepick-toast-in {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+@keyframes notepick-toast-out {
+  from {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-10px);
+  }
+}
+
+/* ===== Read-only note content styling (replaces @tailwindcss/typography) ===== */
+.notepick-content h1,
+.notepick-content h2,
+.notepick-content h3 {
+  font-weight: 600;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+.notepick-content h1 { font-size: 1.4em; }
+.notepick-content h2 { font-size: 1.2em; }
+.notepick-content h3 { font-size: 1.1em; }
+
+.notepick-content p {
+  margin-bottom: 0.75em;
+}
+
+.notepick-content ul,
+.notepick-content ol {
+  padding-left: 1.5em;
+  margin-bottom: 0.75em;
+}
+
+.notepick-content ul { list-style: disc; }
+.notepick-content ol { list-style: decimal; }
+
+.notepick-content li {
+  margin-bottom: 0.25em;
+}
+
+.notepick-content blockquote {
+  border-left: 3px solid #cbd5e1;
+  padding-left: 1em;
+  margin: 0.75em 0;
+  color: #6b7280;
+}
+
+.notepick-content pre {
+  background: #f3f4f6;
+  padding: 0.75em;
+  border-radius: 4px;
+  overflow-x: auto;
+  font-size: 0.875em;
+  margin-bottom: 0.75em;
+}
+
+.notepick-content code {
+  font-family: 'SF Mono', 'Fira Code', monospace;
+  font-size: 0.875em;
+}
+
+.notepick-content img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+.notepick-content a {
+  color: #2563eb;
+  text-decoration: underline;
+}
+
+/* ===== Fade transition for Vue ===== */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.2s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
