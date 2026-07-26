@@ -10,6 +10,7 @@
 
 </div>
 
+
 ## 这是什么
 
 NotePick 是一个 Chrome 扩展（MV3），解决的问题很简单：浏览网页时看到有用的内容，想快速存下来，以后还能找到。
@@ -22,6 +23,13 @@ NotePick 是一个 Chrome 扩展（MV3），解决的问题很简单：浏览网
 - 数据全在本地 IndexedDB，不需要注册登录，也不上传任何东西
 
 MVP 阶段，全本地存储。
+
+<img width="413" height="575" alt="image" src="https://github.com/user-attachments/assets/26a4b91f-1581-4b96-8887-21651e26e28c" />
+
+<img width="1595" height="658" alt="image" src="https://github.com/user-attachments/assets/7f3a9f1e-d763-4fc2-b21f-137e5ccce0a8" />
+
+<img width="1334" height="1310" alt="image" src="https://github.com/user-attachments/assets/250e6d96-32cd-429c-ab99-220ce5b04e79" />
+
 
 ## 功能
 
